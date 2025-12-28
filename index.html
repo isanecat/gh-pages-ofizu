@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solo Game Developer | Portfolyo</title>
+    <title>Ofizu | Solo Game Developer</title>
     <style>
         /* GENEL AYARLAR (CSS) */
         :root {
@@ -11,7 +11,7 @@
             --card-bg: #1e1e1e;
             --text-main: #e0e0e0;
             --text-muted: #a0a0a0;
-            --accent: #47a6ff; /* Godot mavisi veya Mavi Göz rengi */
+            --accent: #47a6ff; /* Mavi Göz Rengi */
             --accent-hover: #1e88e5;
         }
 
@@ -66,6 +66,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
+            align-items: start; /* Kartların üst hizalı olmasını sağlar */
         }
 
         .game-card {
@@ -73,12 +74,16 @@
             border-radius: 12px;
             overflow: hidden;
             border: 1px solid #333;
-            transition: transform 0.2s, border-color 0.2s;
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+            height: 100%; /* Grid içinde tam yükseklik kaplaması için */
+            display: flex;
+            flex-direction: column;
         }
 
         .game-card:hover {
             transform: translateY(-5px);
             border-color: var(--accent);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
 
         .game-image {
@@ -90,18 +95,23 @@
             justify-content: center;
             color: #555;
             font-size: 0.9rem;
+            overflow: hidden;
         }
         
-        /* Eğer gerçek resim varsa bu class kullanılır */
         .game-image img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* Resmi kutuya sığdırır ve keser */
+            transition: transform 0.3s;
         }
 
-        .game-info { padding: 1.5rem; }
+        .game-card:hover .game-image img {
+            transform: scale(1.05); /* Hover'da resim hafifçe büyür */
+        }
+
+        .game-info { padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; }
         .game-title { font-size: 1.4rem; margin-bottom: 0.5rem; color: #fff; }
-        .game-desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+        .game-desc { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; flex-grow: 1; }
         
         .btn {
             display: inline-block;
@@ -111,8 +121,33 @@
             border-radius: 6px;
             font-weight: 600;
             font-size: 0.9rem;
+            text-align: center;
+            align-self: flex-start; /* Butonu sola yaslar */
         }
         .btn:hover { background-color: var(--accent-hover); }
+
+        /* YENİ GÖRSEL BUTON STİLİ */
+        .image-button-link {
+            display: block;
+            height: 100%; /* Grid hücresini doldur */
+            min-height: 250px; /* Minimum bir yükseklik ver */
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .image-button-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+
+        .image-button-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Resmi butona tam sığdır */
+            display: block;
+        }
 
         /* HAKKIMDA & İLETİŞİM */
         .about-text { font-size: 1.1rem; color: var(--text-muted); }
@@ -130,13 +165,14 @@
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
             .games-grid { grid-template-columns: 1fr; }
+            .image-button-link { min-height: 200px; } /* Mobilde yükseklik ayarı */
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Solo Game Developer</h1>
+        <h1>Ofizu</h1>
         <p class="subtitle">Godot Engine ile Bağımsız Oyunlar Geliştiriyorum</p>
         <span class="tag">GODOT 4.4.1</span>
     </header>
@@ -150,8 +186,8 @@
                 
                 <article class="game-card">
                     <div class="game-image">
-                        <span style="text-align:center;">Oyun Görseli<br>(600x400)</span>
-                        </div>
+                        <img src="https://via.placeholder.com/600x400?text=The+Fruit+Merchant's+Diary" alt="The Fruit Merchant's Diary">
+                    </div>
                     <div class="game-info">
                         <h3 class="game-title">The Fruit Merchant's Diary</h3>
                         <p class="game-desc">
@@ -162,16 +198,9 @@
                     </div>
                 </article>
 
-                <article class="game-card" style="opacity: 0.5;">
-                    <div class="game-image">
-                        <span>Geliştirme Aşamasında</span>
-                    </div>
-                    <div class="game-info">
-                        <h3 class="game-title">Yeni Proje</h3>
-                        <p class="game-desc">Henüz duyurulmamış yeni bir proje üzerinde çalışıyorum.</p>
-                        <span class="btn" style="background:#333; cursor:default;">Yakında</span>
-                    </div>
-                </article>
+                <a href="#contact" class="image-button-link">
+                    <img src="Buton_2.png" alt="Yeni Proje Yakında">
+                </a>
 
             </div>
         </section>
@@ -195,7 +224,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Solo Game Dev. Tüm hakları saklıdır.</p>
+        <p>&copy; 2025 Ofizu. Tüm hakları saklıdır.</p>
     </footer>
 
 </body>
