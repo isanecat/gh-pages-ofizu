@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – Little Pilot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #fefefe;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            margin-top: 0;
+        }
+        code {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy – Little Pilot</h1>
+    <p><strong>Effective Date:</strong> 07-March-2026</p>
+    <p><strong>Little Pilot</strong> is a mobile game developed by <strong>Ofizu Games</strong>. This privacy policy explains what information we may collect, how it is used, and how it is protected.</p>
+
+    <h2>1️⃣ Information We Collect</h2>
+    <p><strong>Little Pilot does not collect personally identifiable information (PII) from children or adults.</strong></p>
+    <p>During gameplay, we collect the following data on the <strong>local device</strong> only:</p>
+    <ul>
+        <li>In-game scores and collection progress</li>
+        <li>Gameplay behavior (e.g., which animals were collected, how long the game was played)</li>
+    </ul>
+    <p>This information is only used <strong>to show game statistics to the player</strong>. It is <strong>not shared with any third party</strong>.</p>
+
+    <h2>2️⃣ Third-Party Services</h2>
+    <ul>
+        <li>The game does <strong>not include any third-party services</strong> that identify users personally.</li>
+        <li>No personal information from children is collected.</li>
+        <li><strong>The game does not include advertisements</strong>.</li>
+    </ul>
+
+    <h2>3️⃣ Data Security</h2>
+    <ul>
+        <li>Game data is stored securely on the device and is <strong>not shared with third parties</strong>.</li>
+    </ul>
+
+    <h2>4️⃣ Children’s Privacy</h2>
+    <p><strong>Little Pilot is designed for children under 13</strong> and complies with COPPA (USA) and applicable privacy laws.</p>
+    <ul>
+        <li>No personal data is requested</li>
+        <li>Any social or interactive features are <strong>child-appropriate</strong></li>
+        <li><strong>No advertisements are shown in the game</strong></li>
+        <li>Suitable for all children (PEGI 3 rating)</li>
+    </ul>
+    <p><em>Note: While designed for children under 13, anyone can play the game.</em></p>
+
+    <h2>5️⃣ User Rights</h2>
+    <ul>
+        <li>Players can view their game data</li>
+        <li>For any information, contact us at: <a href="mailto:ofizu@ofizu.com">ofizu@ofizu.com</a></li>
+    </ul>
+
+    <h2>6️⃣ Changes to This Policy</h2>
+    <p>This policy may be updated over time. Updates will be posted <strong>in the app or on the Google Play listing</strong>.</p>
+</body>
+</html>
