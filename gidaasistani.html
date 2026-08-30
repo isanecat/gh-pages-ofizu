@@ -2,38 +2,65 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik Politikası - Gıda Asistanı</title>
 </head>
 <body>
-
     <h2>GİZLİLİK POLİTİKASI</h2>
+    <p><strong>Son güncelleme:</strong> 30 Ağustos 2026</p>
 
     <p><strong>Gıda Asistanı</strong> ("biz", "bizim" veya "uygulama") olarak, verilerinizi korumaya ve gizliliğinize saygı duymaya büyük önem veriyoruz. Bu politika, uygulamamızı kullandığınızda verilerinizi nasıl topladığımızı, işlediğimizi ve koruduğumuzu açıklar.</p>
 
-    <h3>1. Topladığımız Veriler</h3>
+    <h3>1. Hesap ve Kimlik</h3>
+    <p>Uygulamayı kullanmak için hesap oluşturmanız veya ad, e-posta, telefon gibi kişisel bilgi vermeniz <strong>gerekmez</strong>. Uygulama ilk açıldığında, kullanım hakkınızı ve abonelik durumunuzu takip edebilmek için <strong>Firebase Anonymous Authentication</strong> aracılığıyla cihazınıza rastgele ve anonim bir kimlik (UID) atanır. Bu kimlik sizi kişi olarak tanımlamaz, kimliğinizle ilişkilendirilemez ve başka hiçbir bilgiyle eşleştirilmez.</p>
+
+    <h3>2. Topladığımız Veriler</h3>
     <ul>
-        <li><strong>Gıda Etiketi Görselleri:</strong> Uygulama üzerinden yüklediğiniz içerik etiket fotoğrafları, yalnızca analiz işlemini gerçekleştirmek amacıyla geçici olarak işlenir. Bu görseller analiz tamamlandıktan sonra sunucularımızda <strong>saklanmaz</strong>.</li>
-        <li><strong>Cihaz ve Kullanım Verileri:</strong> Uygulamanın iyileştirilmesi ve hataların giderilmesi için anonim kullanım istatistikleri toplanabilir.</li>
+        <li><strong>Gıda Etiketi Görselleri:</strong> Kamera ile çektiğiniz veya galeriden seçtiğiniz ürün etiketi fotoğrafları, yalnızca analiz işlemini gerçekleştirmek amacıyla geçici olarak işlenir. Bu görseller analiz tamamlandıktan sonra sunucularımızda <strong>saklanmaz</strong>.</li>
+        <li><strong>Kullanım Kotası Verileri:</strong> Ücretsiz ve premium analiz haklarınızı takip edebilmek için, anonim kimliğinizle ilişkili olarak yaptığınız analiz sayısı, dönem başlangıç tarihi ve abonelik durumunuz sunucularımızda (Google Firestore) saklanır. Bu kayıt görsel, analiz sonucu veya kişisel bilgi içermez.</li>
+        <li><strong>Cihazda Saklanan Veriler:</strong> "Güvenli Listem" kayıtlarınız ile alerjen, vegan, helal ve sağlık tercihleriniz yalnızca <strong>cihazınızda</strong> saklanır; sunucularımıza gönderilmez. Uygulamayı sildiğinizde bu veriler de silinir.</li>
+        <li><strong>Anonim Kullanım İstatistikleri:</strong> Uygulamanın iyileştirilmesi ve hataların giderilmesi için <strong>Aptabase</strong> analiz hizmeti üzerinden anonim kullanım istatistikleri toplanır. Aptabase kişisel veri veya cihaz kimliği toplamaz.</li>
         <li><strong>Ödeme Bilgileri:</strong> Uygulama içi satın almalar <strong>RevenueCat</strong> altyapısı ile yönetilmektedir. Ödeme bilgileriniz (kredi kartı vb.) doğrudan Google Play Store tarafından yönetilir; biz bu verilere erişemeyiz.</li>
     </ul>
 
-    <h3>2. Yapay Zeka (Gemini API) Kullanımı</h3>
-    <p>Analiz süreçlerini gerçekleştirmek için <strong>Google Gemini API</strong> altyapısını kullanıyoruz. Görselleriniz veya metinleriniz, analiz edilmek üzere Google sunucularına iletilir. Verileriniz, Google’ın Gizlilik Politikası ve veri işleme şartlarına tabi olarak, yalnızca size sunulan analiz sonucunu oluşturmak amacıyla işlenir.</p>
+    <h3>3. Cihaz İzinleri</h3>
+    <p>Uygulama, ürün etiketi fotoğrafı çekebilmeniz için <strong>kamera</strong>, mevcut bir fotoğrafı seçebilmeniz için <strong>galeri/medya</strong> erişimi ister. Bu izinler yalnızca siz bir analiz başlattığınızda kullanılır; arka planda görüntü alınmaz ve fotoğraflarınıza toplu erişim sağlanmaz.</p>
 
-    <h3>3. RevenueCat ile Abonelik Yönetimi</h3>
-    <p>Abonelik durumunuzu ve kullanıcı haklarınızı doğrulamak için <strong>RevenueCat</strong> hizmetini kullanıyoruz. RevenueCat, abonelik durumunuzu takip etmek için anonim bir kullanıcı kimliği (User ID) kullanır. RevenueCat gizlilik politikasını <a href="https://www.revenuecat.com/privacy">buradan</a> inceleyebilirsiniz.</p>
+    <h3>4. Yapay Zeka (Gemini API) Kullanımı</h3>
+    <p>Analiz süreçlerini gerçekleştirmek için <strong>Google Gemini API</strong> altyapısını kullanıyoruz. Görselleriniz veya metinleriniz, analiz edilmek üzere Google sunucularına iletilir. Verileriniz, Google'ın Gizlilik Politikası ve veri işleme şartlarına tabi olarak, yalnızca size sunulan analiz sonucunu oluşturmak amacıyla işlenir.</p>
 
-    <h3>4. Veri Paylaşımı</h3>
-    <p>Verilerinizi asla satmıyoruz. Yalnızca yasal zorunluluklar olması durumunda veya yukarıda belirtilen hizmet sağlayıcılarımız (Google, RevenueCat) ile teknik işlemleri gerçekleştirmek için veri aktarımı yapılır.</p>
+    <h3>5. Google Firebase Hizmetleri</h3>
+    <p>Uygulama altyapısında Google Firebase'in şu hizmetlerini kullanıyoruz:</p>
+    <ul>
+        <li><strong>Anonymous Authentication:</strong> Anonim kullanıcı kimliği oluşturma</li>
+        <li><strong>Cloud Functions:</strong> Analiz isteklerinin sunucu tarafında işlenmesi</li>
+        <li><strong>Cloud Firestore:</strong> Anonim kullanım kotası kayıtlarının saklanması</li>
+        <li><strong>App Check (Play Integrity):</strong> Kötüye kullanımın engellenmesi ve isteklerin gerçek uygulamadan geldiğinin doğrulanması</li>
+    </ul>
+    <p>Bu hizmetler Google'ın <a href="https://policies.google.com/privacy">Gizlilik Politikası</a> kapsamındadır.</p>
 
-    <h3>5. Güvenlik</h3>
+    <h3>6. RevenueCat ile Abonelik Yönetimi</h3>
+    <p>Abonelik durumunuzu ve kullanıcı haklarınızı doğrulamak için <strong>RevenueCat</strong> hizmetini kullanıyoruz. RevenueCat, abonelik durumunuzu takip etmek için yukarıda açıklanan anonim kullanıcı kimliğini kullanır. RevenueCat gizlilik politikasını <a href="https://www.revenuecat.com/privacy">buradan</a> inceleyebilirsiniz.</p>
+
+    <h3>7. Veri Paylaşımı</h3>
+    <p>Verilerinizi asla satmıyoruz. Yalnızca yasal zorunluluklar olması durumunda veya yukarıda belirtilen hizmet sağlayıcılarımız (Google, RevenueCat, Aptabase) ile teknik işlemleri gerçekleştirmek için veri aktarımı yapılır.</p>
+
+    <h3>8. Veri Saklama ve Silme</h3>
+    <p>Analiz görselleri işlem tamamlanır tamamlanmaz silinir. Anonim kullanım kotası kayıtları, hizmetin işleyişi için gerekli olduğu sürece saklanır. Cihazınızda tutulan tüm veriler (Güvenli Listem, tercihleriniz) uygulamayı sildiğinizde ortadan kalkar. Sunucudaki anonim kaydınızın silinmesini talep etmek isterseniz aşağıdaki e-posta adresinden bize ulaşabilirsiniz.</p>
+
+    <h3>9. Çocukların Gizliliği</h3>
+    <p>Uygulama 13 yaş altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel veri toplamayız.</p>
+
+    <h3>10. Güvenlik</h3>
     <p>Verilerinizi korumak için endüstri standardı güvenlik önlemleri uyguluyoruz. Ancak hiçbir dijital sistem %100 güvenli değildir; verilerinizin güvenliği için gerekli tüm teknik tedbirleri almaktayız.</p>
 
-    <h3>6. Haklarınız</h3>
+    <h3>11. Sorumluluk Reddi</h3>
+    <p>Uygulamanın sunduğu analizler bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz. Gıda alerjisi, intolerans veya sağlık durumunuza ilişkin kararlarda ürün ambalajındaki resmi bilgileri esas alın ve gerektiğinde bir sağlık uzmanına danışın.</p>
+
+    <h3>12. Haklarınız</h3>
     <p>Kişisel verileriniz üzerindeki haklarınızı kullanmak veya verilerinizin silinmesini talep etmek isterseniz, <strong>ofizu@ofizu.com</strong> üzerinden bizimle iletişime geçebilirsiniz.</p>
 
-    <h3>7. Politika Değişiklikleri</h3>
+    <h3>13. Politika Değişiklikleri</h3>
     <p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Değişiklikleri bu sayfada yayınlayacağız.</p>
-
 </body>
 </html>
